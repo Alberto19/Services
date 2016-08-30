@@ -9,9 +9,10 @@ import Promocoes.Domain.Pacote;
 import Promocoes.Respository.PacoteRepository;
 import Promocoes.Service.PacoteService;
 
+//Informa ao Spring que um Objeto do Tipo PacoteServico dever ser criado no contexto da aplicacao
 @Service
 public class PacoteServiceImpl implements PacoteService{
-
+	//Para que o Spring possa realizar a injecao de denpendencias
 	@Autowired
 	private PacoteRepository repository;
 	

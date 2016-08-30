@@ -15,7 +15,9 @@ import org.springframework.web.bind.annotation.RestController;
 import Promocoes.Domain.Pacote;
 import Promocoes.Service.PacoteService;
 
+//Informa ao Spring que sera uma Controller REST
 @RestController
+//Informa o mapeamento dos endpoints para os metodos da classe
 @RequestMapping(value = "/api/v1/pacotes", produces = MediaType.APPLICATION_JSON_VALUE)
 public class PacoteController {
 
